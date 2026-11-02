@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Fraunces", "Iowan Old Style", Palatino, "Palatino Linotype", serif;
+  --font-body: "Source Serif 4", Palatino, "Palatino Linotype", serif;
+  --color-paper: #f3eee4;
+  --color-paper-deep: #e7decd;
+  --color-ink: #1c2820;
+  --color-muted: #5c675f;
+  --color-moss: #2f5d40;
+  --color-moss-soft: #e3eee6;
+  --color-clay: #b85c38;
+  --color-rule: #d5cbb8;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background: var(--color-paper);
+    color: var(--color-ink);
+    line-height: 1.6;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  ::selection {
+    background: var(--color-moss-soft);
+    color: var(--color-ink);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-moss);
+    outline-offset: 2px;
+  }
+}
+
+.dropcap::first-letter {
+  font-family: var(--font-display);
+  float: left;
+  font-size: 3.15rem;
+  line-height: 0.8;
+  padding-right: 0.45rem;
+  font-weight: 600;
+  color: var(--color-moss);
+}
+
+.page-enter {
+  animation: rise 220ms ease-out;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .page-enter {
+    animation: none;
+  }
+}

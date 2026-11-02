@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "The Greens Field Book",
+      "hasCanvas": false,
+      "bodyTextLen": 1484,
+      "bodyTextHash": "47f5f148797be0867893ae0693ad26fb557cc1828b9faa39086760b3cb260cde",
+      "bodyTextPrefix": "Skip to text The Greens Field Book Search I The crops What this ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "The Greens Field Book",
+      "hasCanvas": false,
+      "bodyTextLen": 788,
+      "bodyTextHash": "07150137995a6539e23c6fa4342d09e9539481a343d0efd069422c120f063c9b",
+      "bodyTextPrefix": "Skip to text The Greens Field Book LEAF CROPS · SEED · THE SINK ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-built.json",
+  "divergesFromBaseline": false,
+  "baselineReasons": []
+}
