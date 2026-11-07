@@ -3,7 +3,7 @@ import { AuthProvider } from "@/lib/auth/provider";
 import { PreviewHostBridge } from "@/components/preview-host-bridge";
 import appCss from "../styles.css?url";
 
-const APP_NAME = "The Greens Field Book";
+const APP_NAME = "Volume 3: Greens (The Education Revolution)";
 
 export const Route = createRootRoute({
   head: () => ({
@@ -14,7 +14,7 @@ export const Route = createRootRoute({
       {
         name: "description",
         content:
-          "The Greens Field Book by Blue and the Awesome Dudes. Grow leafy greens, cut the plant, save and store seed, read your USDA zone, and wash the harvest.",
+          "Volume 3 of The Education Revolution, by Blue and the Awesome Dudes. Grow leafy greens, cut the plant, save and store seed, read your USDA zone, and wash the harvest.",
       },
       { name: "theme-color", content: "#2F5D40" },
     ],

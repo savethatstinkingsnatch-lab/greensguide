@@ -1,5 +1,5 @@
 export const EDITION = {
-  title: "The Greens Field Book",
+  title: "Volume 3: Greens",
   author: "Blue and the Awesome Dudes",
   year: 2026,
 };

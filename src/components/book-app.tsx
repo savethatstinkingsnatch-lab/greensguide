@@ -58,8 +58,8 @@ export function BookApp({ search }: { search: BookSearch }) {
   const zone = search.zone ?? (hydrated ? storedZone : 6);
 
   useEffect(() => {
-    const name = chapter ? chapter.title : "The Greens Field Book";
-    document.title = chapter ? `${name} · The Greens Field Book` : name;
+    const name = chapter ? chapter.title : "Volume 3: Greens";
+    document.title = chapter ? `${name} · Volume 3: Greens` : name;
   }, [chapter]);
 
   useEffect(() => {
@@ -148,7 +148,7 @@ export function BookApp({ search }: { search: BookSearch }) {
                 <span className="text-moss">{chapter.numeral}</span> {chapter.title}
               </>
             ) : (
-              "The Greens Field Book"
+              "Volume 3: Greens"
             )}
           </p>
           {chapter ? (
